@@ -4,9 +4,12 @@ import {HashRouter, Route, Switch} from 'react-router-dom';
 import {Provider} from 'react-redux';
 
 import Login from './components/login';
-import Register from './components/register';
+import Register from './containers/register';
 import Main from './components/main';
 import store from './redux/store';
+
+//引入公共的样式
+import './assets/less/index.less';
 
 ReactDOM.render(
    (

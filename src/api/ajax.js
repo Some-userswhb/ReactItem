@@ -14,8 +14,7 @@ export default function ajax(url, data, type = 'GET') {
    let querystring = '';
 
    if (data) {
-      //将传入的对象所有可枚举的属性保存一个数组中返回
-      // for in能遍历出来的属性就是可枚举属性
+      //将传入的对象所有可枚举的属性保存一个数组
       Object.keys(data).forEach(key => {
          //获取属性值
          const value = data[key];
